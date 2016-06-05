@@ -49,10 +49,11 @@ x = zeros(n, 1);
 %
 
 
+temp = unique(word_indices);
 
-
-
-
+for iter = 1:length(temp)
+    x(temp(iter)) = 1;
+endfor
 
 
 % =========================================================================
